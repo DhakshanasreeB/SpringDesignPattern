@@ -1,0 +1,90 @@
+/* Basic reset and global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sell page container */
+.sell-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  height: 100%; /* Use full height inside the body */
+  border: 2px solid black; /* Added black border */
+  background: url('https://5.imimg.com/data5/SELLER/Default/2021/5/ZO/IU/CF/79898367/d8-500x500.jpg') no-repeat center center fixed;
+  background-size: cover; /* Cover the entire page */
+}
+
+/* Page header */
+.sell-page h1 {
+  margin-bottom: 30px;
+  color: #fff; /* White text color for contrast against the background */
+  font-size: 2.5rem; /* Larger font size for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better readability */
+  border-bottom: 2px solid black; /* Added black bottom border */
+}
+
+/* Property form */
+.property-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 800px; /* Set a max-width to prevent it from getting too wide */
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 30px; /* Additional padding inside the form */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid black; /* Added black border */
+}
+
+/* Form labels */
+.property-form label {
+  margin-bottom: 5px; /* Reduced space between label and input */
+  color: #333;
+}
+
+/* Form inputs and textarea */
+.property-form input,
+.property-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border: 1px solid black; /* Added black border */
+  margin-bottom: 10px; /* Reduced space between form elements */
+}
+
+/* Textarea specific styles */
+.property-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* File input specific styles */
+.property-form input[type="file"] {
+  padding: 3px;
+}
+
+/* Button styles */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  border: 2px solid black; /* Added black border */
+}
+
+/* Button hover state */
+.btn:hover {
+  background-color: #0056b3;
+}

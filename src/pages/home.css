@@ -1,0 +1,241 @@
+/* Home Page styling */
+.homepage {
+  padding: 20px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* White */
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555555; /* Medium Gray */
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  background-color: #a0a076; /* Muted Olive Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content .btn:hover {
+  background-color: #8c8c8c; /* Darker Gray */
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Search section */
+.search {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.search h2 {
+  font-size: 2.5rem;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px; /* Restrict width for better visual */
+  margin: 0 auto; /* Center the form */
+}
+
+.search-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  border: 2px solid #a0a076; /* Muted Olive Green */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.search-form input:focus {
+  border-color: #7c8d8e; /* Slate Gray */
+}
+
+.search-form button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #a0a076; /* Muted Olive Green */
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-form button:hover {
+  background-color: #8c8c8c; /* Darker Gray */
+}
+
+/* Property Listings section - Home Page Specific */
+.homepage .property-listings {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.homepage .property-listings h2 {
+  font-size: 2rem;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 20px;
+}
+
+.homepage .property-cards-container {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  gap: 20px; /* Add spacing between cards */
+}
+
+.homepage .property-cards {
+  display: flex;
+  flex-direction: row; /* Align items in a single row */
+  gap: 20px; /* Add spacing between cards */
+  animation: none; /* Disable animation */
+}
+
+.homepage .property-card {
+  flex: 0 0 auto; /* Ensure cards do not grow beyond their content size */
+  width: 250px; /* Fixed width for consistent card sizing */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff; /* White */
+  transition: transform 0.2s ease-in-out;
+}
+
+.homepage .property-card:hover {
+  transform: translateY(-5px);
+  background-color: #f0f0f0; /* Light Gray */
+}
+
+.homepage .property-card img {
+  width: 100%;
+  height: auto;
+}
+
+.homepage .property-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.homepage .property-info h3 {
+  margin: 10px 0;
+  color: #333333; /* Dark Gray */
+}
+
+.homepage .property-info p {
+  font-size: 1.2rem;
+  color: #b5b9bd; /* Bright Blue */
+}
+
+/* General button styling */
+.btn {
+  background-color: #777374; /* Gray */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #373b41; /* Darker Gray */
+}
+
+/* Call to Action (CTA) section */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: #333333; /* Dark Gray */
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  color: #555555; /* Medium Gray */
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c2c2c; /* Charcoal Gray */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure footer content wraps on smaller screens */
+}
+
+.footer-section {
+  margin: 20px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  color: #ffffff; /* White */
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  color: #999999; /* Gray */
+}
+
+/* Rent Page - Adjust for card sizing */
+.rent-page .property-card {
+  width: calc(50% - 20px); /* Adjust width for the Rent Page */
+}
+
+/* Hide the next button */
+.next-button {
+  display: none;
+}
